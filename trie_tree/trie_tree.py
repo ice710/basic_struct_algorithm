@@ -34,9 +34,9 @@ class trie_tree(object):
             self.buff.append('%s +- %s' % (prefix , k if k!='exist' else 'NULL'))
             if v and not isinstance(v, bool):
                 if count == 0:
-                    self._print(v, level+1, prefix+'    ')
+                    self._print(v, level+1, prefix+'    ') #同层
                 else:
-                    self._print(v, level+1, prefix+' |  ')
+                    self._print(v, level+1, prefix+' |  ') #下层
 
 def test(f_name):
     lfreq = {}
