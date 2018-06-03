@@ -15,7 +15,7 @@
   - （2）以（1.3）选取的主元为分界点，把小于主元的放在左边，大于主元的放在右边；
   - （3）判断主元的位置与k的大小，有选择的对左边或右边递归。
 - 2.执行过程：
-
+![BFPRT](https://github.com/ice710/basic_struct_algorithm/blob/master/topK/img/BFPRT.png)
 - 3.时间复杂度分析：
 BFPRT算法在最坏情况下的时间复杂度是$O(n)$，下面予以证明。令 $T(n)$ 为所求的时间复杂度，则有：
 $T(n)≤T(\frac{n}{5})+T(\frac{7n}{10})+c⋅n$ (c为一个正常数)
